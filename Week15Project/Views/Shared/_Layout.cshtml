@@ -17,15 +17,51 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <!--Need to figure out razor syntax-->
                 @Html.ActionLink("Wardrobe Picker", "View All", "Add New", new { area = "" }, new { @class = "navbar-brand" })
                 @Html.ActionLink("Edit", "Delete", new { area = "" }, new { @class = "navbar-brand" })
-                <!--Need to figure out razor syntax-->
+                
+                <!--Quick Select Buttons for Wardrobe Navigation-->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tops <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Add New Top</a></li>
+                        <li><a href="#">Edit Top</a></li>
+                        <li><a href="#">View Top Details</a></li>
+                        <li><a href="#">Delete Top</a></li>
+                    </ul>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bottoms <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Add New Bottom</a></li>
+                        <li><a href="#">Edit Bottom</a></li>
+                        <li><a href="#">View Bottom Details</a></li>
+                        <li><a href="#">Delete Bottom</a></li>
+                    </ul>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shoes <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Add New Shoe</a></li>
+                        <li><a href="#">Edit Shoe</a></li>
+                        <li><a href="#">View Shoe Details</a></li>
+                        <li><a href="#">Delete Shoe</a></li>
+                    </ul>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Accessories <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Add New Accessory</a></li>
+                        <li><a href="#">Edit Accessory</a></li>
+                        <li><a href="#">View Accessory Details</a></li>
+                        <li><a href="#">Delete Accessory</a></li>
+                    </ul>
+                </div>
+
             </div>
-            <ul class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">Profile</a></li>
-                <li role="presentation"><a href="\Views\Accessories\Create.cshtml">Add Accessory</a></li>
-            </ul>
         </div>
     </div>
     <div class="container body-content">

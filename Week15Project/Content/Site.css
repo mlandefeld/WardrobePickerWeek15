@@ -32,3 +32,6 @@ body{
 .thumbnail{
     margin-top: 50px;
 }
+.dropdown-menu{
+    margin-right: 10px;
+}
