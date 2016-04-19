@@ -33,18 +33,26 @@ body{
     
 }
 .navbar-default .navbar-brand{
-    color: #E8E8E8; 
+    color: #E8E8E8;
 }
 .navbar-default .navbar-brand:hover{
     color: #EF73E1; 
 }
+.navbar-default{
+    border: none;
+}
 .thumbnail{
-    margin-top: 50px;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    margin-left: 30px;
 }
 .dropdown-menu{
     margin-right: 10px;
 }
-h1, h3{
+h1{
+    font-family: 'Pontano Sans', sans-serif;
+}
+h3{
     font-family: 'Pontano Sans', sans-serif;
 }
 .btn-group{
@@ -55,4 +63,34 @@ h1, h3{
     margin-left: 5px;
     background-color: #F4F4F4;
     border-top-left-radius: 5px;
+}
+.jumbotron{
+    background-image: url("http://optimise-design.com/wp-content/uploads/2015/12/built-in-wardrobe-4betterhome.com_.jpg");
+    /*background-image: url("http://greaterthanrubies.net/wp-content/uploads/2013/08/Fall-Capsule-Wardrobe-Pieces-790x500.jpg?15af9d")*/
+    width: 100%;
+    height:auto;
+}
+.img-home{
+    width:  1500px;
+    height: 650px;
+    position: fixed;
+}
+.main-words{
+    font-size: 50px;
+    color: #E8E8E8;
+    position: absolute;
+    z-index:100;
+    padding-left: 320px;
+    padding-top: 85px;
+}
+.large-text{
+    font-size: 100px;
+}
+.container{
+    margin-left: 0;
+    padding-left:0;
+}
+.row{
+   text-align:center;/*figure out why container is skewed to the left. */
+   padding-left: 50px;
 }
