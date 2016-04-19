@@ -25,13 +25,34 @@ textarea {
 /*My added CSS below*/
 body{
     font-family: 'Pontano Sans', sans-serif;
+    background-color: #E2E5DA;
 }
-.navbar-header{
+.navbar-default{
     font-size: 30px;
+    background-color: #39375B;
+    
+}
+.navbar-default .navbar-brand{
+    color: #E8E8E8; 
+}
+.navbar-default .navbar-brand:hover{
+    color: #EF73E1; 
 }
 .thumbnail{
     margin-top: 50px;
 }
 .dropdown-menu{
     margin-right: 10px;
+}
+h1, h3{
+    font-family: 'Pontano Sans', sans-serif;
+}
+.btn-group{
+    
+}
+.btn-default{
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #F4F4F4;
+    border-top-left-radius: 5px;
 }
