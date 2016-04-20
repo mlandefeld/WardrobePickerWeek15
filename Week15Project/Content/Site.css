@@ -74,23 +74,18 @@ h3{
     width:  1500px;
     height: 650px;
     position: fixed;
+    float: left;
+    margin-left:-180px;
 }
 .main-words{
     font-size: 50px;
     color: #E8E8E8;
     position: absolute;
     z-index:100;
-    padding-left: 320px;
-    padding-top: 85px;
+    padding-left: 130px;
+    padding-top: 95px;
 }
 .large-text{
     font-size: 100px;
 }
-.container{
-    margin-left: 0;
-    padding-left:0;
-}
-.row{
-   text-align:center;/*figure out why container is skewed to the left. */
-   padding-left: 50px;
-}
+/*problem with image not to left side*/

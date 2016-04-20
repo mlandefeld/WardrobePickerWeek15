@@ -26,10 +26,9 @@
                         Tops <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Add New Top</a></li>
-                        <li><a href="#">Edit Top</a></li>
-                        <li><a href="#">View Top Details</a></li>
-                        <li><a href="#">Delete Top</a></li>
+                        <!--Action links instead of href for dropdown links-->
+                        <li>@Html.ActionLink("Add New Top", "Create", "Tops")</li>
+                        <li>@Html.ActionLink("View All Tops", "Index", "Tops")</li> <!--Verify that you can't go directly to details-->
                     </ul>
                 </div>
                 <div class="btn-group">
@@ -37,10 +36,10 @@
                         Bottoms <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Add New Bottom</a></li>
-                        <li><a href="#">Edit Bottom</a></li>
-                        <li><a href="#">View Bottom Details</a></li>
-                        <li><a href="#">Delete Bottom</a></li>
+                        <li>@Html.ActionLink("Add New Bottom", "Create", "Bottoms")</li>
+                        <li>@Html.ActionLink("Edit Bottom", "Edit", "Bottoms")</li>
+                        <li>@Html.ActionLink("View Bottom Details", "Details", "Bottoms")</li>
+                        <li>@Html.ActionLink("Delete Bottom", "Delete", "Bottoms")</li>
                     </ul>
                 </div>
                 <div class="btn-group">
@@ -48,10 +47,10 @@
                         Shoes <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Add New Shoe</a></li>
-                        <li><a href="#">Edit Shoe</a></li>
-                        <li><a href="#">View Shoe Details</a></li>
-                        <li><a href="#">Delete Shoe</a></li>
+                        <li>@Html.ActionLink("Add New Shoe", "Create", "Shoes")</li>
+                        <li>@Html.ActionLink("Edit Shoe", "Edit", "Shoes")</li>
+                        <li>@Html.ActionLink("View Shoe Details", "Details", "Shoes")</li>
+                        <li>@Html.ActionLink("Delete Shoe", "Delete", "Shoes")</li>
                     </ul>
                 </div>
                 <div class="btn-group">
@@ -59,10 +58,10 @@
                         Accessories <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Add New Accessory</a></li>
-                        <li><a href="#">Edit Accessory</a></li>
-                        <li><a href="#">View Accessory Details</a></li>
-                        <li><a href="#">Delete Accessory</a></li>
+                        <li>@Html.ActionLink("Add New Accessory", "Create", "Accessories")</li>
+                        <li>@Html.ActionLink("Edit Accessory", "Edit", "Accessories")</li>
+                        <li>@Html.ActionLink("View Accessory Details", "Details", "Accessories")</li>
+                        <li>@Html.ActionLink("Delete Accessory", "Delete", "Accessories")</li>
                     </ul>
                 </div>
 
