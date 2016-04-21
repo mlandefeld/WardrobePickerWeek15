@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wardrobe Picker</title>
     <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'> 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -28,7 +29,7 @@
                     <ul class="dropdown-menu">
                         <!--Action links instead of href for dropdown links-->
                         <li>@Html.ActionLink("Add New Top", "Create", "Tops")</li>
-                        <li>@Html.ActionLink("View All Tops", "Index", "Tops")</li> <!--Verify that you can't go directly to details-->
+                        <li>@Html.ActionLink("View All Tops", "Index", "Tops")</li>
                     </ul>
                 </div>
                 <div class="btn-group">
@@ -37,9 +38,7 @@
                     </button>
                     <ul class="dropdown-menu">
                         <li>@Html.ActionLink("Add New Bottom", "Create", "Bottoms")</li>
-                        <li>@Html.ActionLink("Edit Bottom", "Edit", "Bottoms")</li>
-                        <li>@Html.ActionLink("View Bottom Details", "Details", "Bottoms")</li>
-                        <li>@Html.ActionLink("Delete Bottom", "Delete", "Bottoms")</li>
+                        <li>@Html.ActionLink("View All Bottoms", "Index", "Bottoms")</li>
                     </ul>
                 </div>
                 <div class="btn-group">
@@ -48,9 +47,7 @@
                     </button>
                     <ul class="dropdown-menu">
                         <li>@Html.ActionLink("Add New Shoe", "Create", "Shoes")</li>
-                        <li>@Html.ActionLink("Edit Shoe", "Edit", "Shoes")</li>
-                        <li>@Html.ActionLink("View Shoe Details", "Details", "Shoes")</li>
-                        <li>@Html.ActionLink("Delete Shoe", "Delete", "Shoes")</li>
+                        <li>@Html.ActionLink("View All Shoes", "Index", "Shoes")</li>
                     </ul>
                 </div>
                 <div class="btn-group">
@@ -59,17 +56,17 @@
                     </button>
                     <ul class="dropdown-menu">
                         <li>@Html.ActionLink("Add New Accessory", "Create", "Accessories")</li>
-                        <li>@Html.ActionLink("Edit Accessory", "Edit", "Accessories")</li>
-                        <li>@Html.ActionLink("View Accessory Details", "Details", "Accessories")</li>
-                        <li>@Html.ActionLink("Delete Accessory", "Delete", "Accessories")</li>
+                        <li>@Html.ActionLink("View All Accessories", "Index", "Accessories")</li>
                     </ul>
                 </div>
 
             </div>
         </div>
     </div>
+    <h4>Update your wardrobe.</h4>
     <div class="container body-content">
         @RenderBody()
+
 
     </div>
 
