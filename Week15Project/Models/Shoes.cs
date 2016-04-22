@@ -8,7 +8,7 @@ namespace Week15Project.Models
 {
     public class Shoes
     {
-        [Key]
+        [Key]/*The key indicates that 'ShoeID' is the ID for Shoes and will not be viewed in the frontend.*/
         public int ShoeID { get; set; }
         public string Nickname { get; set; }
         public string Photo { get; set; }

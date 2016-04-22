@@ -8,7 +8,7 @@ namespace Week15Project.Models
 {
     public class Accessories
     {
-        [Key]
+        [Key]/*The key indicates that 'AccessoryID' is the ID for Accessories and will not be viewed in the frontend.*/
         public int AccessoryID { get; set; }
         public string Nickname { get; set; }
         public string Photo { get; set; }

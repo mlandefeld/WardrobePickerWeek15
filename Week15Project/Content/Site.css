@@ -52,6 +52,9 @@ body{
 h1 h2{
     font-family: 'Pontano Sans', sans-serif;
 }
+.h2{
+    margin-left: 50px;
+}
 h3{
     font-family: 'Pontano Sans', sans-serif;
 }
@@ -64,51 +67,85 @@ h3{
     background-color: #F4F4F4;
     border-top-left-radius: 5px;
 }
-.jumbotron{
-    background-image: url("http://optimise-design.com/wp-content/uploads/2015/12/built-in-wardrobe-4betterhome.com_.jpg");
-    /*background-image: url("http://greaterthanrubies.net/wp-content/uploads/2013/08/Fall-Capsule-Wardrobe-Pieces-790x500.jpg?15af9d")*/
-    width: 100%;
-    height:auto;
-}
 .img-home{
     width:  1500px;
     height: 650px;
     position: fixed;
     float: left;
-    margin-left:-180px;
+    margin-left:-140px;
 }
-.main-words{
+.main-words{/*Text over picture on home page*/
     font-size: 50px;
     color: #E8E8E8;
     position: absolute;
     z-index:100;
-    padding-left: 130px;
+    padding-left: 180px;
     padding-top: 95px;
 }
 .large-text{
     font-size: 100px;
 }
-.img-thumbnail{
-    width: 64px;
-    height: 64px;
+.img-thumbnail{/*restricts the user input photos to a small, uniform thumbnail size*/
+    width: 80px;
+    height: 80px;
 }
 /*make rotated text on all pages*/
-h4{
-    font-size: 80px;
+.one{
+    color: #39375B;
+    opacity: 0.6;
+    font-size: 130px;
     font-family: 'La Belle Aurore', cursive;
-    -ms-transform: rotate(18deg); /* IE 9 */
-    -webkit-transform: rotate(18deg); /* Chrome, Safari, Opera */
-    transform: rotate(18deg);
-    margin-top: 120px;
+    -ms-transform: rotate(14deg); /* IE 9 */
+    -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */
+    transform: rotate(14deg);
+    margin-top: 130px;
+    padding-right:50px;
     position:absolute;
     right:0;
+    z-index: -1;/*bottom layer so that it doesn't cover any buttons it might overlap with */
+}
+.two{
+    color: #39375B;
+    font-size: 130px;
+    opacity: 0.6;
+    font-family: 'La Belle Aurore', cursive;
+    -ms-transform: rotate(14deg); /* IE 9 */
+    -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */
+    transform: rotate(14deg);
+    margin-top: 230px;
+    padding-right:125px;
+    position:absolute;
+    right:0;
+    z-index: -1;
+}
+.three{
+    color: #39375B;
+    font-size: 130px;
+    opacity: 0.6;
+    font-family: 'La Belle Aurore', cursive;
+    -ms-transform: rotate(14deg); /* IE 9 */
+    -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */
+    transform: rotate(14deg);
+    margin-top: 330px;
+    padding-right:50px;
+    position:absolute;
+    right:0;
+    z-index: -1;
 }
 a{
     color: #39375B;
     text-decoration: none;
     font-size: 16px;
 }
-a:hover{
+a:hover{ /*button links show pink when hovered over*/
     color: #EF73E1;
     text-decoration: none;
 }
+/*copied the following path from inspect element so I could get rid of the table line. Didn't work when it was any shorter */
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td{
+    border-top: none;
+}
+.table{
+    width: 70%;
+}
+

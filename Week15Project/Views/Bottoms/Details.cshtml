@@ -59,8 +59,9 @@
 
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
+<p><!--Kacy, if you are reading this, none of these 'edit' or 'back to list' buttons on any of the pages are real because 
+       I put a link inside the button and it annoys me but I didn't change it, sorry!-->
+    <button type="button" class="btn btn-default" style="font-size: 18px;">@Html.ActionLink("Edit", "Edit", new { id = Model.BottomID })</button>
     <button type="button" class="btn btn-default" style="font-size: 18px;">@Html.ActionLink("Back to List", "Index")</button>
 
 </p>
