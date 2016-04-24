@@ -10,7 +10,7 @@
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-    
+    <!--This page uses a form to add a new accessory to the database-->
     <div class="form-horizontal">
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -69,7 +69,7 @@
         </div>
     </div>
 }
-
+<!--added button instead of text link-->
 <div>
     <button type="button" class="btn btn-default" style="font-size: 18px;">@Html.ActionLink("Back to List","Index")</button>
 </div>

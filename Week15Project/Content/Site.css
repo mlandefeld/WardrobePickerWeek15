@@ -23,7 +23,7 @@ textarea {
     max-width: 280px;
 }
 /*My added CSS below*/
-body{
+body{/*main page color and font*/
     font-family: 'Pontano Sans', sans-serif;
     background-color: #E2E5DA;
 }
@@ -35,13 +35,13 @@ body{
 .navbar-default .navbar-brand{
     color: #E8E8E8;
 }
-.navbar-default .navbar-brand:hover{
+.navbar-default .navbar-brand:hover{/*different color for mouse hover*/
     color: #EF73E1; 
 }
 .navbar-default{
     border: none;
 }
-.thumbnail{
+.thumbnail{/*Home page thumbnail sizes*/
     margin-top: 300px;
     margin-bottom: 50px;
     margin-left: 30px;
@@ -90,7 +90,7 @@ h3{
     height: 80px;
 }
 /*make rotated text on all pages*/
-.one{
+.one{/*Update*/
     color: #39375B;
     opacity: 0.6;
     font-size: 130px;
@@ -98,13 +98,12 @@ h3{
     -ms-transform: rotate(14deg); /* IE 9 */
     -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */
     transform: rotate(14deg);
-    margin-top: 130px;
-    padding-right:50px;
+    top: 130px;
+    right:50px;
     position:absolute;
-    right:0;
     z-index: -1;/*bottom layer so that it doesn't cover any buttons it might overlap with */
 }
-.two{
+.two{/*your*/
     color: #39375B;
     font-size: 130px;
     opacity: 0.6;
@@ -112,13 +111,12 @@ h3{
     -ms-transform: rotate(14deg); /* IE 9 */
     -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */
     transform: rotate(14deg);
-    margin-top: 230px;
-    padding-right:125px;
+    top: 230px;
+    right:125px;
     position:absolute;
-    right:0;
     z-index: -1;
 }
-.three{
+.three{/*wardrobe.*/
     color: #39375B;
     font-size: 130px;
     opacity: 0.6;
@@ -126,13 +124,12 @@ h3{
     -ms-transform: rotate(14deg); /* IE 9 */
     -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */
     transform: rotate(14deg);
-    margin-top: 330px;
-    padding-right:50px;
+    top: 350px;
+    right:50px;
     position:absolute;
-    right:0;
     z-index: -1;
 }
-a{
+a{/*no decoration for link text*/
     color: #39375B;
     text-decoration: none;
     font-size: 16px;
@@ -145,7 +142,20 @@ a:hover{ /*button links show pink when hovered over*/
 .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td{
     border-top: none;
 }
-.table{
+.table{/*shorter width of table for each page*/
     width: 70%;
+}
+.author{/*styling next to glyphicon at bottom of home page*/
+    color:#39375B;
+    font-size: 19px;
+    font-family: 'La Belle Aurore', cursive;
+    position:relative;
+    z-index:100;
+}
+.modal-content{/*styling for modal delete confirmation on all delete pages*/
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 18px;
+    text-align:center;
+    padding-top: 10px;
 }
 

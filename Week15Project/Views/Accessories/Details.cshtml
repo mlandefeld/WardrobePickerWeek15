@@ -5,7 +5,7 @@
 }
 <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 <h2>Accessory Details</h2>
-
+<!--displays all form inputs for a selected accessory-->
 <div>
     <hr />
     <dl class="dl-horizontal">
@@ -59,7 +59,7 @@
 
     </dl>
 </div>
-<p>
+<p><!--added button instead of text link-->
     <button type="button" class="btn btn-default" style="font-size: 18px;">@Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID })</button>
     <button type="button" class="btn btn-default" style="font-size: 18px;">@Html.ActionLink("Back to List", "Index")</button>
 </p>

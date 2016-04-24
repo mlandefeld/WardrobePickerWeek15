@@ -5,7 +5,7 @@
 }
 <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 <h2>Top Details</h2>
-
+<!--displays all form inputs for a selected top-->
 <div>
     <hr />
     <dl class="dl-horizontal">
@@ -60,6 +60,7 @@
     </dl>
 </div>
 <p>
+    <!--added buttons for continuity on each page-->
     <button type="button" class="btn btn-default" style="font-size: 18px;">@Html.ActionLink("Edit", "Edit", new { id = Model.TopID })</button>
     <button type="button" class="btn btn-default" style="font-size: 18px;">@Html.ActionLink("Back to List", "Index")</button>
 </p>

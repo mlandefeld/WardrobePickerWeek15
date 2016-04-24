@@ -10,6 +10,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <!--navbar on every page-->
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -18,10 +19,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!--razer syntax: "NAME YOU WANT", "fileName", "folderFileIsIN"-->
+                <!--razor syntax: "NAME YOU WANT", "fileName", "folderFileIsIN"-->
                 @Html.ActionLink("Wardrobe Picker", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 
-                <!--Quick Select Buttons for Wardrobe Navigation-->
+                <!--Additional Bootstrap: Button Dropdowns for Wardrobe Navigation-->
                 <div class="btn-group">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Tops <span class="caret"></span>
@@ -63,9 +64,11 @@
             </div>
         </div>
     </div>
+    <!--Phrase on right side of each page.-->
     <h4 class="one">Update</h4>
     <h4 class="two">your</h4>
     <h4 class="three">wardrobe.</h4>
+
     <div class="container body-content">
         @RenderBody()
 

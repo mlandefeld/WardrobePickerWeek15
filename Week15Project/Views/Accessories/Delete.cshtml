@@ -5,7 +5,7 @@
 }
 <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 <h2>Delete Accessory</h2>
-
+<!--this delete page displays the selected input so you can view the details before confirming the deletion-->
 <h3>Are you sure you want to delete this?</h3>
 <div>
     <hr />
@@ -63,9 +63,21 @@
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 
+        <!--bootstrap js modal for delete confirmation-->
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" />
-            <button type="button" class="btn btn-default" style="font-size: 18px;">@Html.ActionLink("Back to List", "Index")</button>
+            <input type="submit" value="Delete" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm"/>
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        Are you sure you want to delete this content?
+                        <div class="modal-footer">
+                            <input type="submit" value="Confirm Deletion" class="btn btn-default" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <button type="button" class="btn btn-default" style="font-size: 18px;">@Html.ActionLink("Back to List", "Index")</button><!--button with action link instead of just link-->
         </div>
     }
 </div>
